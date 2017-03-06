@@ -1,0 +1,131 @@
+/*************************/
+/*** General Selectors ***/
+/*************************/
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 90%;
+  display: flex;
+  flex-flow: row;
+}
+
+/* Navigation Bar*/
+.flex-container-nav{
+	padding: 0;
+  	margin: 0;
+  	list-style: none;
+  	height: 10%;
+  	display: flex;
+  	flex-flow: row wrap;
+  	margin-left: 2%;
+  	margin-top: 2%;
+}
+nav ul{
+	list-style: none;
+	width: 100%;
+	padding: 1%;
+	background-color: #FFB4B0;
+	border-style: solid;
+	border-color: black;
+
+}
+nav ul li{
+	display: inline;
+	margin: 0%;
+	align-self: left;
+}
+
+.flex-item {
+	padding: 10px;
+  	width: 150px;
+  	font-size: 1em;
+  	text-align: left;
+  	border-style: solid;
+  	border-color: black;
+}
+
+
+/* Left Sidebar */
+
+.sidebar__left {
+  	flex-grow: 1;
+	background-color: #4DD7FA;
+	margin-left: 2%;
+}
+
+.sidebar__left div{
+	margin: 4%;
+}
+
+/* Main Song List Selection */
+.main {
+  	flex-grow: 5;
+  	margin-left: 2%;
+	background-color: #FEFAC0;
+	margin-right: 2%;
+}
+
+
+
+
+/******************/
+/*** Checkboxes ***/
+/******************/
+
+/* The <div> element that holds the two <div> elements that are columns of checkboxes */
+.checkboxContainer{
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	margin: 0;
+}
+
+/* The <div> element that holds the <label> and <input> elements */
+.genreColumn{
+	display: inline-block;
+	width: 50%;
+	margin-right: 90px;
+}
+
+/* The <input> element that is the checkbox */
+.genreCheckbox{
+	padding: 5px;
+	display: inline;
+  	font-size: 1em;
+  	text-align: left;
+
+}
+
+/* Dropdown Menu selector */
+.dropdown{
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px 5px 5px 5px;
+	margin: 2% 2% 2% 5%;
+	width: 80%;
+}
+
+
+
+
+
+.song-list__item--data{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+.song-list{
+	list-style: none;
+}
+
+.song-title{
+	margin-bottom: 15px;
+}
+
+
+

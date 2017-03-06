@@ -1,0 +1,12 @@
+<div ng-repeat="song in songs">
+<h4>{{song.name}}</h4>
+<ul class="song-list__item--data">
+	<li>{{song.artist}}</li>
+	<li>{{song.genre}}</li>
+	<li>{{song.album}}</li>
+	<li>
+		<input type="button" value="Delete" ng-click="deleteSong(song.id)">
+		<button class="btn btn-info" ng-click="editSong(song.id)"><a ng-href="#!/songs/{{selectedSong.id}}"></a>Edit</button>
+	</li>
+</ul>
+<hr></div>

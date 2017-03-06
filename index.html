@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music History</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="MyApp">
+
+<div ng-include="'partials/navbar.html'"></div>
+
+<div class="flex-container">
+
+    <section class="flex-item sidebar__left" ng-include="'partials/sidebar.html'" scope="" onload="" ng-show="isLoggedIn" ng-controller="SidebarCtrl"></section>
+
+    <section class="flex-item main" id="main">
+        <section class="uiContainer--wrapper" ng-view></section>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Dependencies -->
+  <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+<!-- App -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/values/fb-creds.js"></script>
+<!-- Factories -->
+<script type="text/javascript" src="app/factories/SongFactory.js"></script>
+<script type="text/javascript" src="app/factories/AuthFactory.js"></script>
+<script type="text/javascript" src="app/factories/FilterFactory.js"></script>
+<!-- Controllers -->
+<script type="text/javascript" src="app/controllers/UserCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/MusicListCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/SidebarCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/NewSongCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/EditSongCtrl.js"></script>
+</body>
+</html>

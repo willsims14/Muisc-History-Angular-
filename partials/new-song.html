@@ -1,0 +1,8 @@
+<div>
+<h3>{{title}}</h3>
+        <input type="text" id="form--title" placeholder="Title" ng-model="newSong.name"></input><br>
+        <input type="text" id="form--artist" placeholder="Artist" ng-model="newSong.artist"></input><br>
+        <input type="text" id="form--album" placeholder="Album" ng-model="newSong.album"></input><br>
+        <input type="text" id="form--genre" placeholder="Genre" ng-model="newSong.genre" ></input><br><br>
+        <button id="save-btn" class=${songItem.btnId} ng-click="addNewSong()">{{btnText}}</button>
+</div>

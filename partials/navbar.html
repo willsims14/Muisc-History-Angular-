@@ -1,0 +1,8 @@
+<nav class="flex-container-nav" ng-controller="UserCtrl">
+	<ul>
+		<li id="view-music"><a ng-href="#!/view-music">View Music</a> |</li>
+		<li id="add-song"><a ng-href="#!/new-song">Add Song</a> |</li>
+		<li id="login" ng-show="!isLoggedIn"><a ng-href="#!/login" >Login</a> |</li>
+    	<li id="logout" ng-show="isLoggedIn"><a ng-href="#!/" ng-click="logout()">Log Out</a></li>
+	</ul>
+</nav>
